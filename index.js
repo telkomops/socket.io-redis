@@ -6,8 +6,8 @@
 var uid2 = require('uid2');
 var redis = require('redis').createClient;
 var msgpack = require('notepack.io');
-var Adapter = require('socket.io-adapter');
-var debug = require('debug')('socket.io-redis');
+//var Adapter = require('socket.io-adapter');
+//var debug = require('debug')('socket.io-redis');
 
 /**
  * Module exports.
@@ -125,7 +125,7 @@ function adapter(uri, opts) {
    * Inherits from `Adapter`.
    */
 
-  Redis.prototype.__proto__ = Adapter.prototype;
+  //Redis.prototype.__proto__ = Adapter.prototype;
 
   /**
    * Called with a subscription message
